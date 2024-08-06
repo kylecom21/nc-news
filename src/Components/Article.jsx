@@ -3,6 +3,7 @@ import { getArticle } from "../../api"
 import { useParams } from "react-router-dom"
 import Button from '@mui/material/Button';
 import formatDate from "./FormatDate";
+import { Link } from "react-router-dom";
 
 const Article = () => {
     const [article, setArticle] = useState({});
@@ -25,8 +26,9 @@ const Article = () => {
         <p className="article-date">{formatDate(article.created_at)}</p>
         <p className="article-body">{article.body}</p>
         <div className="button-container">
-      <Button variant="contained" className="article-votes" sx={{backgroundColor: '#333', color:'#d8c5a7;'}}>{article.votes}</Button>
+      <Link to={`/articles/${article.article_id}/comments`}>
       <Button variant="contained" className="article-comments" sx={{backgroundColor: '#333', color:'#d8c5a7;'}}>Comments</Button>
+      </Link>
     </div>
     </div>
   )
