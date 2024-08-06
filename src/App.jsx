@@ -4,6 +4,7 @@ import Home from "./Components/Home";
 import Header from "./Components/Header";
 import Articles from "./Components/Articles";
 import Article from "./Components/Article";
+import Comments from "./Components/Comments";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/articles" element={<Articles />} />
         <Route path="/articles/:article_id" element={<Article />}></Route>
+        <Route path="/articles/:article_id/comments" element={<Comments />}></Route>
       </Routes>
     </div>
   );
