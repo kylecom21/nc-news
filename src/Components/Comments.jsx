@@ -34,8 +34,8 @@ const Comments = () => {
       </Button>
       {comments.map((comment) => {
         return (
-          <div className="comment-list">
-            <li className="comment-item" key={comment.comment_id}>
+          <div className="comment-list" key={comment.comment_id}>
+            <li className="comment-item">
               <div className="comment-header">
                 <p className="comment-author">{comment.author}</p>
                 <Button

@@ -20,7 +20,7 @@ const Articles = () => {
       <h1>Articles</h1>
         {articles.map((article) => {
           return (
-            <Link to={`/articles/${article.article_id}`}>
+            <Link to={`/articles/${article.article_id}`} key={article.article_id}>
             <div className="articles-list">
             <li className="articles-item" key={article.article_id}>
                 <img className="articles-img"src={article.article_img_url} alt={article.title}/>
