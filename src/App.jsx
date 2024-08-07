@@ -14,7 +14,6 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/articles" element={<Articles />} />
         <Route path="/articles/:article_id" element={<Article />}></Route>
-        <Route path="/articles/:article_id/comments" element={<Comments />}></Route>
       </Routes>
     </div>
   );
