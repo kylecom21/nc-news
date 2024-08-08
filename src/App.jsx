@@ -4,7 +4,6 @@ import Home from "./Components/Home";
 import Header from "./Components/Header";
 import Articles from "./Components/Articles";
 import Article from "./Components/Article";
-import Comments from "./Components/Comments";
 
 function App() {
   return (

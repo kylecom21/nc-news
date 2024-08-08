@@ -28,4 +28,22 @@ const updateArticleByArticleId = (article_id, inc_votes) => {
   })
 }
 
-export { getArticles, getArticle, getCommentByArticleId, updateArticleByArticleId };
+const createComment = (article_id,username,body ) => {
+
+  const data = {
+    username:username,
+    body:body
+  }
+
+  return api.post(`/api/articles/${article_id}/comments`,data).then(({data}) => {
+    return data
+  })
+}
+
+const getUsers = () => {
+    return api.get("/api/users").then(({data}) => {
+      return data.users
+    })
+}
+
+export { getArticles, getArticle, getCommentByArticleId, updateArticleByArticleId,createComment, getUsers };
