@@ -76,15 +76,14 @@ body {
   color: #c9c3b7;
   position: relative;
   padding-top: 10%;
-  text-decoration: none !important
+  text-decoration: none !important;
 }
 
 .articles-img {
-  width: 150px; 
+  width: 150px;
   height: auto;
-  border-radius: 10px; 
+  border-radius: 10px;
   padding-top: 15%;
-  
 }
 
 .articles-topic,
@@ -109,135 +108,164 @@ body {
 }
 
 .article-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  .article-header-buttons {
-    padding: 5px;
-  }
-  
-
+.article-header-buttons {
+  padding: 5px;
+}
 
 .article-author {
-    text-align: left;
-    padding-left: 10px;
-    font-size: 10px;
-    font-weight: bold;
+  text-align: left;
+  padding-left: 10px;
+  font-size: 10px;
+  font-weight: bold;
 }
 
 .article-title {
-    text-align: center;
+  text-align: center;
 }
 
 .article-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    margin: 0 auto;
-    padding: 0;
-    height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0;
+  height: auto;
 }
 
 .article-date {
-    text-align: right;
-    padding-right: 20px;
+  text-align: right;
+  padding-right: 20px;
 }
 
 .article-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-    width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  width: 90%;
 }
 
-
 .button-container {
-    display: flex; 
-    justify-content: space-evenly; 
-    margin-bottom: 20px
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
 }
 
 .comments {
-    width: 80%;
-    margin: 0 auto;
-  }
+  width: 80%;
+  margin: 0 auto;
+}
 
 .comment-title {
-    text-align: center;
-    font-size: 2rem;
-    color: #333;
-    margin-bottom: 20px;
-  }
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
 
-  .comment-input{
-    width: 75%;
-    height: 30px;
-    border-radius: 5px;
-    border: 2px solid #333
-  }
-  
-  .comment-list {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .comment-item {
-    padding: 15px;
-    margin: 10px 0;
-    border: 2px solid #c9c3b7;
-    border-radius: 10px;
-    background-color: #333;
-    display: flex;
-    flex-direction: column;
-  }
+.comment-input {
+  width: 75%;
+  height: 30px;
+  border-radius: 5px;
+  border: 2px solid #333;
+}
 
-  .comment-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .comment-author {
-    font-weight: bold;
-    color: #c9c3b7;;
-    margin-bottom: 5px;
-  }
-  
+.comment-list {
+  list-style-type: none;
+  padding: 0;
+}
 
-  .comment-body {
-    color: #c9c3b7;
-    margin-bottom: 10px;
-  }
+.comment-item {
+  padding: 15px;
+  margin: 10px 0;
+  border: 2px solid #c9c3b7;
+  border-radius: 10px;
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+}
 
-  .comment-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .comment-date {
-    font-size: 0.9rem;
-    color: #c9c3b7;
-    margin-bottom: 10px;
-  }
-  
-  .comment-votes {
-    align-self: flex-start;
-  }
+.comment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  .voting-title{
-    text-align: center;
-    background-color: #333;
-    color: #c9c3b7;
-  }
+.comment-author {
+  font-weight: bold;
+  color: #c9c3b7;
+  margin-bottom: 5px;
+}
 
-  .voting-buttons {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-  }
+.comment-body {
+  color: #c9c3b7;
+  margin-bottom: 10px;
+}
+
+.comment-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.comment-date {
+  font-size: 0.9rem;
+  color: #c9c3b7;
+  margin-bottom: 10px;
+}
+
+.comment-votes {
+  align-self: flex-start;
+}
+
+.voting-title {
+  text-align: center;
+  background-color: #333;
+  color: #c9c3b7;
+}
+
+.voting-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.comment-form {
+  padding: 15px;
+  margin: 10px 4% 5%;
+  color: #c9c3b7;
+  border-radius: 10px;
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  height: 30%;
+}
+
+.comment-comment {
+  display: inline-block;
+  align-items: end;
+  padding-left: 5px;
+}
+
+.comment-username {
+  display: inline-block;
+  align-items: end;
+}
+
+.comment-send {
+  top: 5px;
+  align-self: center;
+}
+
+.comment-h1{
+    align-self: center;
+    top: -4px;
+}
