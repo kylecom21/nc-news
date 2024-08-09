@@ -34,9 +34,10 @@ const AddComment = ({ setComments }) => {
       })
       .then((comments) => {
         setComments(comments);
-      }).catch((error) => {
-        alert("Error posting comment")
       })
+      .catch((error) => {
+        alert("Error posting comment");
+      });
   }
 
   return (
@@ -76,7 +77,11 @@ const AddComment = ({ setComments }) => {
           className="comment-send"
           variant="contained"
           sx={{ backgroundColor: "#c9c3b7;", color: "#333" }}
-          onClick={handleSubmit}
+          onClick={() => {
+            if (body.length >= 1) {
+              handleSubmit;
+            }
+          }}
         >
           Send
         </Button>

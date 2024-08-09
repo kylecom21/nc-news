@@ -1,17 +1,20 @@
 import { getArticles } from "../../api";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { useSearchParams } from "react-router-dom";
 
 const Articles = () => {
   const [articles, setArticles] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
+  const [searchParams] = useSearchParams()
+  const topic = searchParams.get("topic")
 
   useEffect(() => {
-    getArticles().then((articles) => {
+    getArticles(topic).then((articles) => {
       setArticles(articles);
       setIsLoading(false);
     }),
-      [];
+      [topic];
   });
   return isLoading ? (
     <h2>Loading...</h2>
