@@ -28,19 +28,22 @@ const AddComment = ({ setComments }) => {
     event.preventDefault();
     createComment(article_id, username, body)
       .then(() => {
-        setBody("")
-        setUsername("")
+        setBody("");
+        setUsername("");
         return getCommentByArticleId(article_id);
       })
       .then((comments) => {
         setComments(comments);
-      });
+      }).catch((error) => {
+        alert("Error posting comment")
+      })
   }
 
   return (
     <div>
       <form className="comment-form">
         <h1 className="comment-h1">Add a Comment</h1>
+
         <label htmlFor="username" className="comment-username">
           Username:
           <input
